@@ -6,7 +6,7 @@ const Card = () => {
 
   return (
     <>
-      <div className='bg-gradient-to-b from-neutralDarkBlue to-neutralVeryDarkBlue text-white max-w-md p-10 rounded-3xl'>
+      <div className='bg-gradient-to-b from-neutralDarkBlue to-neutralDarkBlueBottom text-white max-w-md p-10 rounded-3xl'>
         <div className='flex justify-center items-center w-14 h-14 bg-neutralDarkBlue rounded-full mb-10'>
           <IconStar style={{ transform: 'scale(1.2)' }} />
         </div>
@@ -20,13 +20,13 @@ const Card = () => {
 
         <div className='flex justify-between mb-10'>
           {arrNumber.map((num) => (
-            <Circle text={num} />
+            <Circle key={num} rateNumber={num} />
           ))}
         </div>
 
         <button
           type='submit'
-          className='block w-full bg-primaryOrange uppercase h-12 rounded-2xl'
+          className='block w-full bg-primaryOrange hover:bg-neutralWhite hover:text-primaryOrange uppercase h-12 rounded-2xl'
         >
           Submit
         </button>

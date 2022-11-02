@@ -13,6 +13,7 @@ module.exports = {
         neutralLightGrey: 'hsl(217, 12%, 63%)',
         neutralMediumGrey: 'hsl(216, 12%, 54%)',
         neutralDarkBlue: 'hsl(213, 19%, 18%)',
+        neutralDarkBlueBottom: '#171e28',
         neutralVeryDarkBlue: 'hsl(216, 12%, 8%)',
       },
     },
