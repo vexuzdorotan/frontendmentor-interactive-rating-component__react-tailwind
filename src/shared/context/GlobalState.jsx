@@ -1,9 +1,10 @@
 import React, { createContext, useReducer } from 'react'
 
-import GlobalReducer, { SELECT_RATE } from './GlobalReducer'
+import GlobalReducer, { SELECT_RATE, SET_THANK_YOU } from './GlobalReducer'
 
 const initialState = {
   selectedRate: 0,
+  isThankYou: false,
 }
 
 export const GlobalContext = createContext(initialState)
@@ -18,9 +19,20 @@ export const GlobalProvider = ({ children }) => {
     })
   }
 
+  const submitRate = () => {
+    dispatch({
+      type: SET_THANK_YOU,
+    })
+  }
+
   return (
     <GlobalContext.Provider
-      value={{ selectedRate: state.selectedRate, updateRate }}
+      value={{
+        selectedRate: state.selectedRate,
+        isThankYou: state.isThankYou,
+        updateRate,
+        submitRate,
+      }}
     >
       {children}
     </GlobalContext.Provider>
