@@ -1,16 +1,16 @@
 import './App.css'
 
+import DarkBackground from './components/DarkBackground'
 import Card from './components/Card'
 import Footer from './components/Footer'
 
-import { GlobalProvider } from './shared/context/GlobalState'
+import GlobalProvider from './shared/context/GlobalState'
 
 const App = () => (
   <GlobalProvider>
-    <div className='flex justify-center items-center h-screen bg-neutralVeryDarkBlue'>
+    <DarkBackground>
       <Card />
-    </div>
-
+    </DarkBackground>
     <Footer />
   </GlobalProvider>
 )

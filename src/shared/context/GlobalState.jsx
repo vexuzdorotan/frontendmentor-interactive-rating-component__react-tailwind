@@ -9,7 +9,7 @@ const initialState = {
 
 export const GlobalContext = createContext(initialState)
 
-export const GlobalProvider = ({ children }) => {
+const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(GlobalReducer, initialState)
 
   const updateRate = (selectedRate) => {
@@ -38,3 +38,5 @@ export const GlobalProvider = ({ children }) => {
     </GlobalContext.Provider>
   )
 }
+
+export default GlobalProvider
