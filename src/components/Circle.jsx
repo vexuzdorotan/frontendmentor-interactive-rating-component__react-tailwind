@@ -17,7 +17,7 @@ const Circle = ({ rateNumber }) => {
       className={`flex justify-center items-center w-14 h-14 ${bgClass} rounded-full hover:cursor-pointer hover:bg-neutralMediumGrey`}
       onClick={() => rateButtonOnClick(rateNumber)}
     >
-      <p>{rateNumber}</p>
+      {rateNumber}
     </button>
   )
 }

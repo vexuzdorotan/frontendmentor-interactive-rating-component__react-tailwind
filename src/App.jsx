@@ -1,3 +1,5 @@
+import React from 'react'
+
 import './App.css'
 
 import DarkBackground from './components/DarkBackground'

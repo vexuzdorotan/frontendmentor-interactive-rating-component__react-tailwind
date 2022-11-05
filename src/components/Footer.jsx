@@ -2,12 +2,12 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='attribution'>
+    <footer className='attribution'>
       Challenge by{' '}
       <a
         href='https://www.frontendmentor.io?ref=challenge'
         target='_blank'
-        rel='noreferrer'
+        rel='noopener noreferrer'
       >
         Frontend Mentor
       </a>
@@ -15,12 +15,12 @@ const Footer = () => {
       <a
         href='https://www.linkedin.com/in/jonneldorotan/'
         target='_blank'
-        rel='noreferrer'
+        rel='noopener noreferrer'
       >
         VeXuZ
       </a>
       .
-    </div>
+    </footer>
   )
 }
 

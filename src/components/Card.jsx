@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import React, { useContext } from 'react'
 import { GlobalContext } from '../shared/context/GlobalState'
 
 import SelectRate from './SelectRate'
